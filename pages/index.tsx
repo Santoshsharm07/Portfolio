@@ -42,7 +42,6 @@ const projects = [
     title: 'Road-Accident-Detection-Alert-System',
     description: 'Designed a real-time Python video processing pipeline using OpenCV for efficient and reliable road accident detection. Implemented an event-driven alert system integrating Twilio API to trigger automated emergency notifications with minimal latency. Optimized detection accuracy by evaluating models using precision, recall, and F1-score metrics on test datasets.',
     tech: ['Python', 'OpenCV', 'Machine Learning', 'Twilio API'],
-    demo: '#',
     github: 'https://github.com/Santoshsharm07/Road-Accident-Detection-Alert-System'
   },
   {
@@ -129,7 +128,7 @@ export default function Home() {
           from_name: data.name,
           from_email: data.email,
           subject: data.subject,
-          message: data.message,
+          message: `Name: ${data.name}\nEmail: ${data.email}\nSubject: ${data.subject}\n\nMessage:\n${data.message}`,
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
       );
