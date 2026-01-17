@@ -1,7 +1,7 @@
 # Portfolio Website
 
-This is my personal portfolio website built using Next.js.  
-It showcases projects, skills, and experience as a software engineer, with a focus on clean design, performance, and responsiveness.
+This is my personal portfolio website .  
+It showcases projects, skills, and experience .
 
 ---
 
