@@ -396,31 +396,29 @@ export default function Home() {
                   </div>
                   
                   {/* Decorative Elements */}
-                  <motion.div 
-                    className="absolute -top-3 -right-3 w-12 h-12 bg-blue-500 rounded-full opacity-70"
-                    initial={{ scale: 0, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 0.7 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    animate={{ 
-                      scale: [1, 1.1, 1],
-                      opacity: [0.7, 0.9, 0.7]
-                    }}
-                    transition={{ 
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: 1
-                    }}
-                  ></motion.div>
+                  <motion.div
+  className="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full opacity-60"
+  initial={{ scale: 0, opacity: 0 }}
+  whileInView={{ scale: 1, opacity: 0.6 }}
+  viewport={{ once: true }}
+  animate={{
+    scale: [1, 1.2, 1],
+    opacity: [0.6, 0.8, 0.6]
+  }}
+  transition={{
+    duration: 2.5,
+    delay: 1,
+    repeat: Infinity
+  }}
+></motion.div>
                   <motion.div 
                     className="absolute -bottom-2 -left-2 w-8 h-8 bg-purple-500 rounded-full opacity-60"
                     initial={{ scale: 0, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 0.6 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
                     animate={{ 
                       scale: [1, 1.2, 1],
-                      opacity: [0.6, 0.8, 0.6]
+                      opacity: [0.6, 0.8, 0.6] 
                     }}
                     transition={{ 
                       duration: 2.5,
